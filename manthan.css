@@ -1,0 +1,118 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  height:100%;
+  /* background: url('/image/mesh-1430108.svg'); */
+  /* background-color: #581845 ; */
+  background-color: #4e53c8
+  ;
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.jumbotron{
+  /* background: url('./image/picx/painting-2407262.jpg'); */
+  /* background-color: #ff0061;           ; */
+  background-color: #6dd5ee  ;           
+  background-repeat: no-repeat;
+  background-position:inherit;
+  background-size: cover;
+  border-radius: 10px;
+  /* background-attachment: fixed; */
+}
+.timer {
+  font-size: 40px;
+  font-weight: 700;
+}
+.floating-timer {
+  position: fixed;
+  top: 0%;
+  left: 70%;
+  border-radius: 15px;
+}
+
+img{
+  position: absolute;
+  top: 2%;
+  width: 175px;
+  height: 174px;
+  left: 1%;
+  border: 1px;
+  /* right: 1%; */
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 4px rgb(0, 0, 0);
+  margin: 10px 10px;
+}
+
+.card:hover {
+  transform: translate(0px,-13px);
+  border-radius: 40px;
+    color: white;
+    box-shadow: 0 0 0 #03e9f4, 20px 0 50px #03e9f4, 0 0 0 #03e9f4, 0 20px 23px #03e9f4;
+  }
+  .display-4
+  {
+    font-weight:700  ;
+  }
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.card1{
+  width: 220px;
+  height: 140px;
+  top: 5%;
+  border-radius:15px ;
+  box-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white;
+  /* animation: blink 3s infinite;   */
+}
+
+.card1:hover
+{
+  transform: scale(1.2);
+
+}
+
+#exampleModalLabel{
+  padding: 5px 5px 5px 5px;
+}
+
+.modal-content{
+  font-size: 25px;
+}
+.modal-title{
+  font-size: 35px;
+}
+
+/* #card1,
+#card2,
+#card3,
+#card5,
+#card4,
+#card6,
+#card7,
+#card8
+{
+  background-color:white;
+  color: red;
+} */
