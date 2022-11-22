@@ -153,8 +153,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            At 7th Position
+          <div class="modal-body" id="mod1">
+            
           </div>
         </div>
       </div>
@@ -169,8 +169,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            At 4th Position
+          <div class="modal-body" id="mod2">
+            
           </div>
         </div>
       </div>
@@ -185,8 +185,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            At 6th Position
+          <div class="modal-body" id="mod3">
+            
           </div>
         </div>
       </div>
@@ -201,8 +201,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            At 3rd Position
+          <div class="modal-body" id="mod4">
+            
           </div>
         </div>
       </div>
@@ -217,8 +217,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            At 8th Position
+          <div class="modal-body" id="mod5">
+            
           </div>
         </div>
       </div>
@@ -233,8 +233,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            At 2nd Position
+          <div class="modal-body" id="mod6">
+            
           </div>
         </div>
       </div>
@@ -249,8 +249,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            At 5th Position
+          <div class="modal-body" id="mod7">
+            
           </div>
         </div>
       </div>
@@ -265,8 +265,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            At 1st Position
+          <div class="modal-body" id="mod8">
+            
           </div>
         </div>
       </div>
@@ -319,6 +319,34 @@
           });
           
       });
+      
+      window.onload=onLoadfunc;
+      function onLoadfunc(){
+        var numSet=new Set();
+        var flag=1;
+        var count=1;
+        while(flag)
+        {
+          var num = Math.floor(Math.random()*8)+1;
+          var str="";
+          if(!numSet.has(num))
+          {
+            var statement=document.getElementById(`mod${count}`);
+            str += "At ";
+            str += num;
+            str += " position!";
+            statement.innerHTML=str;
+            count++;
+            numSet.add(num);
+          }
+          if(numSet.size==8)
+          {
+            flag=0;
+          }
+        }
+      }
+
+      
     </script>
   </body>
 </html>
